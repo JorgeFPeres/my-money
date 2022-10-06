@@ -10,7 +10,6 @@ import {
 import * as z from 'zod'
 import { Controller, useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { api } from '../../lib/axios'
 import { useContext } from 'react'
 import { TransactionContext } from '../../contexts/TransactionContext'
 
@@ -54,25 +53,25 @@ export function NewTransactionModal() {
         <form onSubmit={handleSubmit(handleCreateNewTransaction)}>
           <input
             {...register('description')}
-            type='text'
-            placeholder='Descrição'
+            type="text"
+            placeholder="Descrição"
             required
           />
           <input
             {...register('price', { valueAsNumber: true })}
-            type='number'
-            placeholder='Preço'
+            type="number"
+            placeholder="Preço"
             required
           />
           <input
             {...register('category')}
-            type='text'
-            placeholder='Categoria'
+            type="text"
+            placeholder="Categoria"
             required
           />
           <Controller
             control={control}
-            name='type'
+            name="type"
             render={({ field }) => {
               console.log(field)
               return (
@@ -80,11 +79,11 @@ export function NewTransactionModal() {
                   onValueChange={field.onChange}
                   value={field.value}
                 >
-                  <TransactionTypeButton value='income' variant='income'>
+                  <TransactionTypeButton value="income" variant="income">
                     <ArrowCircleUp size={24} />
                     Entrada
                   </TransactionTypeButton>
-                  <TransactionTypeButton value='outcome' variant='outcome'>
+                  <TransactionTypeButton value="outcome" variant="outcome">
                     <ArrowCircleDown size={24} />
                     Saída
                   </TransactionTypeButton>
@@ -93,7 +92,7 @@ export function NewTransactionModal() {
             }}
           />
 
-          <button type='submit' disabled={isSubmitting}>
+          <button type="submit" disabled={isSubmitting}>
             Cadastrar
           </button>
         </form>
