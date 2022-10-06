@@ -23,6 +23,22 @@
       "category": "Educacao",
       "price": 350,
       "createdAt": "2022-09-06T01:00:00.618Z"
+    },
+    {
+      "description": "Carro",
+      "price": 500,
+      "category": "Mecânica",
+      "type": "outcome",
+      "createdAt": "2022-10-06T02:32:50.502Z",
+      "id": 4
+    },
+    {
+      "description": "Computador",
+      "price": 500,
+      "category": "Freelance",
+      "type": "income",
+      "createdAt": "2022-10-06T02:43:04.306Z",
+      "id": 5
     }
   ]
 }
