@@ -20,7 +20,7 @@ export function useSummary() {
 
         return acc
       },
-      { income: 0, outcome: 0, total: 0 }
+      { income: 0, outcome: 0, total: 0 },
     )
   }, [transactions])
   return summary

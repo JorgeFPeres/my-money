@@ -45,7 +45,7 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
 
       setTransactions((state) => [response.data, ...state])
     },
-    []
+    [],
   )
 
   const fetchTransactions = useCallback(async (query?: string) => {
