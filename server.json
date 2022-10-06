@@ -6,7 +6,7 @@
       "type": "income",
       "category": "Venda",
       "price": 14000,
-      "createdAd": "2022-10-06T01:00:00.618Z"
+      "createdAt": "2022-10-06T01:00:00.618Z"
     },
     {
       "id": 2,
@@ -14,7 +14,15 @@
       "type": "outcome",
       "category": "Alimentação",
       "price": 50,
-      "createdAd": "2022-09-06T01:00:00.618Z"
+      "createdAt": "2022-09-06T01:00:00.618Z"
+    },
+    {
+      "id": 3,
+      "description": "Faculdade",
+      "type": "outcome",
+      "category": "Educacao",
+      "price": 350,
+      "createdAt": "2022-09-06T01:00:00.618Z"
     }
   ]
 }
